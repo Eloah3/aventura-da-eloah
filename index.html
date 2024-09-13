@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>O Mistério do Santuário Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/vila.png" alt="Uma vila antiga">
+            <p>Você chegou a uma vila esquecida, onde rumores de um santuário perdido estão circulando. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o antigo templo</button>
+            <button class="btn-proximo" data-proximo="2">Investigar a biblioteca local</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você decide explorar o antigo templo. Ao entrar, encontra uma série de enigmas e símbolos antigos.</p>
+            <button class="btn-proximo" data-proximo="3">Resolver o enigma dos símbolos</button>
+            <button class="btn-proximo" data-proximo="4">Sair e investigar outras pistas</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Na biblioteca, você encontra um livro antigo sobre lendas locais. Parece que o santuário está escondido em uma montanha distante.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para a montanha</button>
+            <button class="btn-proximo" data-proximo="6">Consultar o bibliotecário sobre mais detalhes</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Ao resolver o enigma, você descobre um mapa escondido no templo que leva à montanha.</p>
+            <button class="btn-proximo" data-proximo="5">Seguir para a montanha</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/templo-abandonado.png" alt="Templo abandonado">
+            <p>Você decide sair do templo e procurar outras pistas. Eventualmente, descobre que o santuário está escondido na montanha.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para a montanha</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Chegando à montanha, você encontra dois caminhos: um leva a uma caverna, o outro a uma área mais aberta.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na caverna</button>
+            <button class="btn-proximo" data-proximo="8">Explorar a área aberta</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>O bibliotecário revela que há uma entrada secreta na montanha. Essa informação confirma que a montanha é o caminho certo.</p>
+            <button class="btn-proximo" data-proximo="5">Seguir para a montanha</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>A caverna leva você a uma entrada secreta que leva ao santuário perdido. Dentro, você encontra tesouros e artefatos antigos.</p>
+            <img src="img/santuario.png" alt="Santuário perdido">
+            <p>Você decide explorar o santuário e preservar seus segredos para o futuro.</p>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>A área aberta revela apenas belas paisagens e nenhuma pista adicional. Você decide retornar e explorar a caverna.</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na caverna</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
